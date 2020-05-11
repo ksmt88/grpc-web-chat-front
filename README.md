@@ -17,3 +17,9 @@ This is a test app that chats in real time.
 yarn install
 yarn start
 ```
+
+## Kubernetes
+- Modify grpc-web-chat-front/.env
+```
+REACT_APP_GRPC_PORT=80
+```
