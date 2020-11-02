@@ -2,6 +2,7 @@ import * as types   from "./types"
 import {Message}    from "../proto/chat_pb"
 import {ChatClient} from "../proto/ChatServiceClientPb"
 import {Empty}      from "google-protobuf/google/protobuf/empty_pb";
+import * as grpc from "grpc"
 
 const client = new ChatClient(`http://${process.env.REACT_APP_GRPC_HOST}:${process.env.REACT_APP_GRPC_PORT}`, {}, {});
 
